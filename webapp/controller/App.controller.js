@@ -1,14 +1,3 @@
-// /*
-// sap.ui.define(["sap/ui/base/ManagedObject"], function (ManagedObject) {
-//   "use strict";
-
-//   return ManagedObject.extend(
-//     "sap.ui.demo.walkthrough.controller.App",
-//     {}
-//   );
-// });
-// */
-
 //Controller Assests
 sap.ui.define(["sap/ui/core/mvc/Controller"], (Controller) => {
   "use strict";
