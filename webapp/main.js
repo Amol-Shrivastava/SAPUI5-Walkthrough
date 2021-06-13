@@ -16,12 +16,29 @@
 
 //Extracting data from view
 
-sap.ui.define(["sap/ui/core/mvc/XMLView"], (XMLView) => {
-  "use strict";
+// sap.ui.define(["sap/ui/core/mvc/XMLView"], (XMLView) => {
+//   "use strict";
 
-  XMLView.create({
-    viewName: "sap.ui.demo.walkthrough.view.App",
-  }).then((oView) => {
-    oView.placeAt("content");
-  });
-});
+//   XMLView.create({
+//     viewName: "sap.ui.demo.walkthrough.view.App",
+//   }).then((oView) => {
+//     oView.placeAt("content");
+//   });
+// });
+
+
+//Create Component Container
+
+sap.ui.define([
+  'sap/ui/core/ComponentContainer'
+], (ComponentContainer) => {
+  'use strict'
+
+    new ComponentContainer({
+      name: 'sap.ui.demo.walkthrough',
+      settings: {
+        id: 'walkthrough'
+      },
+      async: true
+    }).placeAt('content')
+})
