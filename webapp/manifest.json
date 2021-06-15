@@ -48,6 +48,22 @@
                     "fallbackLocale": ""
                 }
             }
+        },
+        "contentDensities": {
+            "cozy": true,
+            "compact": true
+        },
+        "resources":{
+            "js":[
+                {
+                    "uri": "<uri>"
+                }
+            ],
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
         }
     }
 }
